@@ -15,7 +15,7 @@ package org.asynchttpclient.netty.channel;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelId;
-import io.netty.channel.DefaultChannelId;
+import io.netty.channel.DefaultChannelIdFactory;
 import io.netty.util.Attribute;
 import io.netty.util.AttributeKey;
 
@@ -53,7 +53,8 @@ public class Channels {
     }
 
     public static void initChannelId(Channel channel) {
-        channel.attr(CHANNEL_ID_ATTRIBUTE).set(new DefaultChannelId());
+        channel.attr(CHANNEL_ID_ATTRIBUTE).set(
+                DefaultChannelIdFactory.newChannelId());
     }
 
     public static void silentlyCloseChannel(Channel channel) {

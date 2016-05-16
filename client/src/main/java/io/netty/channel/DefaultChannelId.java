@@ -33,7 +33,7 @@ import java.util.regex.Pattern;
 /**
  * The default {@link ChannelId} implementation.
  */
-public final class DefaultChannelId implements ChannelId {
+final class DefaultChannelId implements ChannelId {
 
     private static final long serialVersionUID = 3884076183504074063L;
 
