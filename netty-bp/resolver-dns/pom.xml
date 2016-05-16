@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>org.asynchttpclient</groupId>
 		<artifactId>netty-bp</artifactId>
-		<version>2.0.3-67f1cd669630cd4a9adca34704866b1f15a15033-1</version>
+		<version>2.0.2-custom-1</version>
 	</parent>
 
 	<artifactId>netty-resolver-dns</artifactId>
